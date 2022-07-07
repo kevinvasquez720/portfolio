@@ -13,57 +13,135 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="container">
-                <!-- Barra logo + menu -->
-                <div class="row nav rounded-top align-items-stretch justify-content-between">
-                    <!-- logotipo> -->
-                    <div class="col-md-12 col-lg logo d-flex align-items-center justify-content-center justify-lg-start">
-                        <h2>Kevin Vasquez</h2>
+    <header>
+        <div class= "container">
+            <!-- Barra Logo + Menu -->
+         <div class="row nav rounded-top align-items-stretch justify-content-between">
+             <!-- Logotipo -->
+            <div class= "cols-md-12 col-lg logo d-flex align-items-center
+            justify-content-center justify-content-lg-start">
+                <h2>Kevin Vasquez</h2>
+					<span class="icono icon-dot"></span>
+					<p>Desarrollador Web</p>
+             </div>
+                    <!-- Menu de Navegacion -->
+             <nav class="cols-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
+                <a href="#" class="c-1 d-flex align-items-center">
+                    <div class="d-flex flex-column text-center">
+                        <span>Portafolio</span>
+                        <i class="icono icon-briefcase"></i>
                     </div>
-                    <span class="icono icon-dot">
-                        
-                    </span>
-                    <p>Desarrollador Web</p>
-                    <!-- menu de navegacion -->
-                    <nav class="col-md-12 col-lg-auto menu d-flex align-items-stretch flex-wrap flex-sm-nowrap">
-                        <a href="#" class="c-1 d-flex align-items-center">
-                            <div class="d-flex flex-column text-center">
-                                <span>Portafolio</span>
-                                <i class="icono icon-briefcase"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="c-1 d-flex align-items-center">
-                            <div class="d-flex flex-column text-center">
-                                <span>Acerca de</span>
-                                <i class="icono icon-user"></i>
-                            </div>
-                        </a>
-
-                        <a href="#" class="c-1 d-flex align-items-center">
-                            <div class="d-flex flex-column text-center">
-                                <span>Contacto</span>
-                                <i class="icono icon-mail"></i>
-                            </div>
-                        </a>
-                    </nav>
-                </div>
-                <div class="row slider">
-                    <div class="col">
-
+                </a>
+                <a href="#" class="c-2 d-flex align-items-center">
+                    <div class="d-flex flex-column text-center">
+                        <span>Acerca de</span>
+                        <i class="icono icon-user"></i>
                     </div>
+                </a>
+                  <a href="#" class="c-3 d-flex align-items-center">
+                    <div class="d-flex flex-column text-center">
+                        <span>Contacto</span>
+                        <i class="icono icon-mail"></i>
+                    </div>
+                </a> 
+
+            </nav>
+         </div>
+         <div class="row slider">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+         </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row portafolio">
+                <div class="col">
+                    <h2 class="titulo">Portafolio</h2>
+                    <div class="contenedor-imagen col-6 col-lg-4">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-1.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="contenedor-imagen col-12 col-lg-8">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-2.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="contenedor-imagen col-6 col-lg-8">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-3.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="contenedor-imagen col-6 col-lg-4">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-4.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="contenedor-imagen col-6 col-lg-4">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-5.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="contenedor-imagen col-6 col-lg-4">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-6.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="contenedor-imagen col-6 col-lg-4">
+                        <a href="#" data-toggle="modal" data target="modal">
+                            <img src="img/img-7.jpg" alt="" class="img-fluid imagen">
+                        </a>
+                    </div>
+                    <div class="modal fade" id="modal">
+                        <div class="modal-dialog d-flex justify-content-center align-items-center">
+                            <div class="modal-content">
+                                <img src="" alt="" id="imagen-modal">
+
+                            </div>
+
+                        </div>
+                    </div>                     
                 </div>
             </div>
-        </header>
-        <main>
+            <div class="row acerca-de align-items-center">
+                <div class="cols-12 cols-lg-4 foto"></div>
+                <div class="cols-12 cols-lg-8 info"></div>
+            </div>
+            <div class="row contacto justify-content-center"></div>
+            <div></div>
+        </div>
+    </main>
+    <footer>
 
-        </main>
-        <footer>
-
-        </footer>
-    </div>
+    </footer>
+    
 </body>
 <script src="js/bootstrap.min.js"></script>
 </html>
